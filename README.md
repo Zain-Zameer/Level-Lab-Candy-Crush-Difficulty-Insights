@@ -449,15 +449,6 @@ run_tests({
 ```R
 # Should our level designer worry about that a lot of 
 # players will complete the episode in one attempt?
-should_the_designer_worry = TRUE # TRUE / FALSE
+should_the_designer_worry = FALSE # TRUE / FALSE
 ```
 
-
-```R
-run_tests({
-    test_that("should_the_designer_worry is FALSE", {
-    expect_false(should_the_designer_worry,
-        info = "The probability is really small, so I don't think the designer should worry that much...")
-    })
-})
-```
